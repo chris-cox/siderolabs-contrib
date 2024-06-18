@@ -3,6 +3,7 @@ cilium:
   ipam:
     mode: kubernetes
   securityContext:
+    appArmorProfile: unconfined
     capabilities:
       ciliumAgent:
         - CHOWN
