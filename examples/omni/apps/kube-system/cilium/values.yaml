@@ -1,5 +1,6 @@
 cilium:
   kubeProxyReplacement: true
+  enable-l2-announcements: true
   ipam:
     mode: kubernetes
   securityContext:
@@ -26,7 +27,7 @@ cilium:
       enabled: false
   # Enable Cilium Ingress Controller
   ingressController:
-    enabled: true
+    enabled: false
   # Use KubePrism to access cluster API
   k8sServiceHost: localhost
   k8sServicePort: 7445
