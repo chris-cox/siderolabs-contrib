@@ -1,6 +1,9 @@
 cilium:
   kubeProxyReplacement: true
-  enable-l2-announcements: true
+  l2announcements: 
+    enabled: true
+  externalIPs:
+    enabled: true
   ipam:
     mode: kubernetes
   securityContext:
