@@ -7,6 +7,9 @@ cilium:
     leaseRetryPeriod: 500ms
   externalIPs:
     enabled: true
+  l2podAnnouncements:
+    enabled: true
+    interface: eth0
   devices: {eth0, net0}
   ipam:
     mode: kubernetes
