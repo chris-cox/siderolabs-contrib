@@ -2,6 +2,9 @@ cilium:
   kubeProxyReplacement: true
   l2announcements: 
     enabled: true
+    leaseDuration: 3s
+    leaseRenewDeadline: 1s
+    leaseRetryPeriod: 500ms
   externalIPs:
     enabled: true
   devices: {eth0, net0}
