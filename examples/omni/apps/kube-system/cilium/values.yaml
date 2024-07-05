@@ -4,6 +4,7 @@ cilium:
     enabled: true
   externalIPs:
     enabled: true
+  devices: {eth0, net0}
   ipam:
     mode: kubernetes
   securityContext:
