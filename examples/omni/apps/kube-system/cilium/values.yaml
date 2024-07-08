@@ -10,7 +10,7 @@ cilium:
   l2podAnnouncements:
     enabled: true
     interface: bond0
-  devices: enx+
+  devices: bond0
   ipam:
     mode: kubernetes
   securityContext:
