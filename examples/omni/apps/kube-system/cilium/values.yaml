@@ -9,7 +9,7 @@ cilium:
     enabled: true
   l2podAnnouncements:
     enabled: true
-    interface: enxbc2411371fd6
+    interface: enx+
   ipam:
     mode: kubernetes
   securityContext:
